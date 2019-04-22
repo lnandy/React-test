@@ -1,0 +1,12 @@
+.login_container{
+    position: absolute;
+    right: -350px;
+    top: 30%;
+    background: #fff;
+    padding: 20px 40px;
+    padding-top: 30px;
+    width: 320px;
+    border-radius: 10px;
+    transition: all .3s;
+    box-shadow: 0 0 2px 1px #efeeee;
+}

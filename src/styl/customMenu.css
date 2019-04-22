@@ -1,0 +1,86 @@
+.uac-toggle-barcircle {
+    float: left;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    width: 68px;
+    height: 68px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    left: calc(100% - 70px);
+}
+.uac-toggle-barcircle .uac-bottom,.uac-toggle-barcircle .uac-top {
+    background: #d5d5d5;
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 36px;
+    border-radius: 1px;
+    -webkit-transform-origin: 34px 2px;
+    transform-origin: 34px 2px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 500ms cubic-bezier(0.8,-1.1,.5,1.9);
+    transition: all 500ms cubic-bezier(0.8,-1.1,.5,1.9)
+}
+
+.uac-toggle-barcircle .uac-top {
+    top: 20px;
+    left: 14px
+}
+
+.uac-toggle-barcircle .uac-bottom {
+    top: 43px;
+    left: 14px
+}
+
+.uac-toggle-barcircle line,.uac-toggle-barcircle path {
+    stroke: #d5d5d5;
+    stroke-linecap: round
+}
+
+.uac-toggle-barcircle .uac-circle {
+    display: inline-block;
+    border-radius: 50px;
+    vertical-align: middle;
+    margin: 0 5px;
+    stroke-dasharray: 1 100 32 300;
+    stroke-dashoffset: 101;
+    -webkit-transition: all 750ms ease;
+    transition: all 750ms ease
+}
+.uac-toggle-barcircle.uac-close{
+    z-index: 100000;
+    transform: scale(0.4);
+    top: -5px;
+}
+.uac-toggle-barcircle.uac-close .uac-top {
+    -webkit-transform: translateX(-4.5px) rotate(-45deg);
+    transform: translateX(-4.5px) rotate(-45deg);
+    background: #00b0da !important;
+}
+
+.uac-toggle-barcircle.uac-close .uac-bottom {
+    -webkit-transform: translateX(-4.5px) rotate(45deg);
+    transform: translateX(-4.5px) rotate(45deg);
+    background: #00b0da !important;
+}
+
+.uac-toggle-barcircle.uac-close .uac-circle {
+    stroke-dasharray: 1 100 190 300;
+    stroke-dashoffset: 1;
+    stroke: #00b0da;
+}
+
+.uac-toggle-barcircle.uac-dark .uac-bottom,.uac-toggle-barcircle.uac-dark .uac-top {
+    background: #333
+}
+
+.uac-toggle-barcircle.uac-dark line,.uac-toggle-barcircle.uac-dark path {
+    stroke: #333
+}

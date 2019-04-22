@@ -1,0 +1,32 @@
+.slidebar_container .logo{
+    background-size: 600px 200px;
+    width: 500px;
+    height: 140px;
+    position: relative;
+    left: -350px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url('./img/logo.png');
+    transition: all .3s;
+}
+.slidebar_container .slidebar_content{
+    overflow: hidden;
+    position: relative;
+    padding-right: 2px;
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+}
+.slidebar_container .slidebar_content:before{
+    content: ' ';
+    color: #fff;
+    animation: writing .8s infinite;
+    border-right: 2px solid #fff;
+    position: relative;
+    left: 100%;
+}
+@keyframes writing
+{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
